@@ -3,6 +3,10 @@ import 'package:flutter_app/src/model/dog_model.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 class DogService{
+
+
+
+
   static Future<List<String>> getName() async {
     String url="https://dog.ceo/api/breeds/list";
     var res= await http.get(url);
@@ -15,7 +19,7 @@ class DogService{
 
   static Future<List<String>> getImageByName(String name) async {
     String url="https://dog.ceo/api/breed/"+
-      Uri.encodeComponent(name)+"/images";
+      Uri.encodeComponent(name)+"/images/random/3";
     var res= await http.get(url);
     if(res.statusCode == 200){
       return DogModel.getImage(json.decode(res.body));

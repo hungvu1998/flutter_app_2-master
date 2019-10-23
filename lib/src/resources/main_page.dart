@@ -40,7 +40,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
 //        children: _childerns,
 //      ),
       bottomNavigationBar: Padding(
-        padding: EdgeInsets.only(bottom: 12),
+        padding: EdgeInsets.only(bottom: 39),
         child: Stack(
           children: <Widget>[
             BottomNavigationBar(
@@ -81,7 +81,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
     super.initState();
   }
   void affterLayout(_){
-    _onTap(2);
+    _onTap(1);
   }
 
 }

@@ -81,9 +81,9 @@ class _HomePageState extends State<HomePage> {
                                     pageViewBuilder: (context, visibilityResolver) {
                                       return PageView.builder(
                                         controller: _pageController,
-                                        itemCount: sampleItems.length,
+                                        itemCount: namesdog.length,
                                         itemBuilder: (context, index) {
-                                          final item = sampleItems[index];
+                                          final item = namesdog[index];
                                           final pageVisibility =
                                           visibilityResolver.resolvePageVisibility(index);
                                           return IntroPageItem(

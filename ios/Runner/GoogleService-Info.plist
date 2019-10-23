@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>311147058414-72scflp37eesbldond4246e2gi4d917v.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.311147058414-72scflp37eesbldond4246e2gi4d917v</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAG9HbnDNAL1lXmc3sMp468cWMmdUlurDA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>311147058414</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.flutterApp</string>
+	<key>PROJECT_ID</key>
+	<string>clonemessageflutter</string>
+	<key>STORAGE_BUCKET</key>
+	<string>clonemessageflutter.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:311147058414:ios:fce5eba8eb8e31aff08fff</string>
+	<key>DATABASE_URL</key>
+	<string>https://clonemessageflutter.firebaseio.com</string>
+</dict>
+</plist>

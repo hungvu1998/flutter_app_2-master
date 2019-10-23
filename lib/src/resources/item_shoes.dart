@@ -119,7 +119,7 @@ class ProductCard extends StatelessWidget {
                       return DetailProduct(shoes: shoes,);
                     }));
                   },
-                  child: Image.asset(
+                  child: Image.network(
                     shoes.imgUrl,
                     width: ScreenUtil().setWidth(600),
                     height: ScreenUtil().setHeight(610),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/src/model/dog_model.dart';
+import 'package:flutter_app/src/resources/detail_dog.dart';
 
 import 'package:flutter_app/src/resources/page_transformer.dart';
 import 'package:meta/meta.dart';
@@ -12,7 +14,7 @@ class IntroPageItem extends StatelessWidget {
     @required this.pageVisibility,
   });
 
-  final IntroItem item;
+  final DogModel item;
   final PageVisibility pageVisibility;
 
   Widget _applyTextEffects({
@@ -40,7 +42,7 @@ class IntroPageItem extends StatelessWidget {
     var categoryText = _applyTextEffects(
       translationFactor: 300.0,
       child: Text(
-        item.category,
+        item.breedName,
         style: textTheme.caption.copyWith(
           color: Colors.white70,
           fontWeight: FontWeight.bold,
@@ -81,7 +83,7 @@ class IntroPageItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var image = Image.network(
-      item.imageUrl,
+      item.img[0],
       fit: BoxFit.cover,
       alignment: FractionalOffset(
         0.5 + (pageVisibility.pagePosition / 3),
@@ -107,16 +109,24 @@ class IntroPageItem extends StatelessWidget {
         vertical: 16.0,
         horizontal: 8.0,
       ),
-      child: Material(
-        elevation: 4.0,
-        borderRadius: BorderRadius.circular(8.0),
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            image,
-            imageOverlayGradient,
-            _buildTextContainer(context),
-          ],
+      child: GestureDetector(
+        onTap: (){
+
+          Navigator.push(context, MaterialPageRoute(builder: (_) {
+            return DetailDog(dogModel: item,);
+          }));
+        },
+        child: Material(
+          elevation: 4.0,
+          borderRadius: BorderRadius.circular(8.0),
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              image,
+              imageOverlayGradient,
+              _buildTextContainer(context),
+            ],
+          ),
         ),
       ),
     );

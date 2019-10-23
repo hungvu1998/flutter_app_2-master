@@ -22,7 +22,7 @@ class _ProductScreenTopPartState extends State<ProductScreenTopPart> {
           Stack(
             children: <Widget>[
               Container(
-                child: Image.asset(
+                child: Image.network(
                   imgUrl,
                   width: double.infinity,
                   height: double.infinity,
@@ -30,12 +30,12 @@ class _ProductScreenTopPartState extends State<ProductScreenTopPart> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 60.0,right: 35.0),
+                padding: const EdgeInsets.only(top: 120.0,right: 35.0),
                 child: Align(
                   alignment: Alignment.topRight,
                   child: Container(
-                    width: screenAwareSize(50.0, context),
-                    height: screenAwareSize(50.0, context),
+                    width: screenAwareSize(40.0, context),
+                    height: screenAwareSize(40.0, context),
                     decoration: BoxDecoration(
                       color: Colors.black26,
                       shape: BoxShape.circle,

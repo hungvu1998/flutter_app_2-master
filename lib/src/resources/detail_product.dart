@@ -18,14 +18,12 @@ class _DetailProductState extends State<DetailProduct> {
   @override
   Widget build(BuildContext context) {
      shoes = widget.shoes;
+
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            Color(0xFF696D77),
-            Color(0xFF292C36),
-          ],
+          colors: shoes.colors,
           begin: Alignment.bottomCenter,
           end: Alignment.bottomCenter,
           tileMode: TileMode.clamp,
